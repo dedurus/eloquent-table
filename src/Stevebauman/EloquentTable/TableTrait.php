@@ -99,7 +99,7 @@ trait TableTrait {
             ));
         }
 
-        return View('eloquenttable::table', array(
+        return \View('eloquenttable::table', array(
             'collection' => $this
         ))->render();
 
