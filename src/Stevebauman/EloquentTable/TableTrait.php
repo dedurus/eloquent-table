@@ -94,12 +94,12 @@ trait TableTrait {
     public function render($view = NULL)
     {
         if($view) {
-            return view($view, array(
+            return \View($view, array(
                 'collection' => $this
             ));
         }
 
-        return view('eloquenttable::table', array(
+        return \View('eloquenttable::table', array(
             'collection' => $this
         ))->render();
 
